@@ -6,6 +6,7 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution", "Solution", "{090740F2-87A6-47A3-8262-A7F70474B429}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget.config = .nuget.config
+		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "github", "github", "{1AC18BC1-E8FF-4719-8D20-CB6484BB2678}"
