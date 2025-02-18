@@ -1,4 +1,4 @@
-name: Publish Bounteous.DotNet.Data.PostgreSQL
+name: Bounteous.Data.PostgreSQL
 
 on:
   pull_request:
@@ -10,8 +10,8 @@ jobs:
     if: github.event.pull_request.merged == true
     uses: Bounteous-Inc/bounteous-dotnet-common-workflows/.github/workflows/build-and-publish-to-nuget.yml@main
     with:
-      csproj-path: './src/Bounteous.DotNet.Data.PostgreSQL/XeBounteousrris.DotNet.Data.PostgreSQL.csproj'
-      nuget-package-name: 'bounteous.dotnet.data.postgresql'
+      csproj-path: './src/Bounteous.Data.PostgreSQL/Bounteous.Data.PostgreSQL.csproj'
+      nuget-package-name: 'bounteous.data.postgresql'
       dotnet-version: '8.0.x'
       release-path: 'net8.0'
     secrets:

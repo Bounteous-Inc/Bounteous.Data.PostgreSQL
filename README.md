@@ -1,1 +1,1 @@
-# Bounteous.DotNet.Data.PostgreSQL
+# Bounteous.Data.PostgreSQL
