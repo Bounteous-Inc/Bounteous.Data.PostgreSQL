@@ -1,5 +1,4 @@
 using Microsoft.EntityFrameworkCore;
-using Xerris.DotNet.Data;
 
 namespace Bounteous.Data.PostgreSQL;
 
@@ -10,11 +9,11 @@ public abstract class PostgresDbContextFactory<T> : DbContextFactory<T> where T 
     {
     }
 
-    protected override DbContextOptions<T> ApplyOptions(bool sensitiveDataLoggingEnabled = false)
+    protected override DbContextOptions<DbContextBase> ApplyOptions(bool sensitiveDataLoggingEnabled = false)
     {
         AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 
-        return new DbContextOptionsBuilder<T>().UseNpgsql(ConnectionBuilder.AdminConnectionString,
+        return new DbContextOptionsBuilder<DbContextBase>().UseNpgsql(ConnectionBuilder.AdminConnectionString,
                 sqlOptions => { sqlOptions.EnableRetryOnFailure(); })
             .UseSnakeCaseNamingConvention()
             .EnableSensitiveDataLogging(sensitiveDataLoggingEnabled: sensitiveDataLoggingEnabled)
