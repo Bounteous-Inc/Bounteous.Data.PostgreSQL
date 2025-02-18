@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Xerris.DotNet.Data;
 
-namespace Bounteous.DotNet.Data.PostgreSQL;
+namespace Bounteous.Data.PostgreSQL;
 
 public abstract class PostgresDbContextFactory<T> : DbContextFactory<T> where T : DbContext
 {

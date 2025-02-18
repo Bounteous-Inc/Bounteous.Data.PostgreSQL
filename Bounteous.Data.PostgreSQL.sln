@@ -16,7 +16,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{
 		.github\workflows\build-and-publish.yml = .github\workflows\build-and-publish.yml
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bounteous.DotNet.Data.PostgreSQL", "src\Bounteous.DotNet.Data.PostgreSQL\Bounteous.DotNet.Data.PostgreSQL.csproj", "{13E47FF3-B752-4791-AE62-EC63CDE0C1FB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bounteous.Data.PostgreSQL", "src\Bounteous.Data.PostgreSQL\Bounteous.Data.PostgreSQL.csproj", "{13E47FF3-B752-4791-AE62-EC63CDE0C1FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

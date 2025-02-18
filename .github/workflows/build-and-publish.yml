@@ -1,4 +1,4 @@
-name: Publish Xerris.DotNet.Data.PostgreSQL
+name: Bounteous.Data.PostgreSQL
 
 on:
   pull_request:
@@ -8,10 +8,10 @@ on:
 jobs:
   publish:
     if: github.event.pull_request.merged == true
-    uses: xerris/xerris-common-workflows/.github/workflows/build-and-publish-to-nuget.yml@main
+    uses: Bounteous-Inc/bounteous-dotnet-common-workflows/.github/workflows/build-and-publish-to-nuget.yml@main
     with:
-      csproj-path: './src/Xerris.DotNet.Data.PostgreSQL/Xerris.DotNet.Data.PostgreSQL.csproj'
-      nuget-package-name: 'xerris.dotnet.data.postgresql'
+      csproj-path: './src/Bounteous.Data.PostgreSQL/Bounteous.Data.PostgreSQL.csproj'
+      nuget-package-name: 'bounteous.data.postgresql'
       dotnet-version: '8.0.x'
       release-path: 'net8.0'
     secrets:
