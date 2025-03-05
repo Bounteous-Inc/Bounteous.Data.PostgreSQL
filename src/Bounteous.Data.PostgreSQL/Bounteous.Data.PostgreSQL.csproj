@@ -8,7 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Bounteous.Data" Version="0.0.4" />
+      <PackageReference Include="Bounteous.Data" Version="0.0.5" />
       <PackageReference Include="EntityFrameworkCore.NamingConventions" Version="8.0.0" />
       <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.2" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.2">
@@ -17,7 +17,7 @@
       </PackageReference>
       <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="9.0.2" />
       <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.2" />
-      <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.3" />
+      <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4" />
     </ItemGroup>
 
 </Project>
