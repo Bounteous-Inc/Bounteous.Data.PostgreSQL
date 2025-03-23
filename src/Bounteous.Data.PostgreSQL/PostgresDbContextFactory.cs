@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Bounteous.Data.PostgreSQL;
 
-public abstract class PostgresDbContextFactory<T> : DbContextFactory<T> where T : DbContext
+public abstract class PostgresDbContextFactory<T> : DbContextFactory<T> where T : IDbContext
 {
     public PostgresDbContextFactory(IConnectionBuilder connectionBuilder, IDbContextObserver observer) 
         : base(connectionBuilder, observer )
