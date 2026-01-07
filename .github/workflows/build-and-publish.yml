@@ -12,8 +12,8 @@ jobs:
     with:
       csproj-path: './src/Bounteous.Data.PostgreSQL/Bounteous.Data.PostgreSQL.csproj'
       nuget-package-name: 'bounteous.data.postgresql'
-      dotnet-version: '8.0.x'
-      release-path: 'net8.0'
+      dotnet-version: '10.0.x'
+      release-path: 'net10.0'
     secrets:
       NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
       NUGET_SOURCE_URI: ${{ secrets.NUGET_SOURCE_URI }}
